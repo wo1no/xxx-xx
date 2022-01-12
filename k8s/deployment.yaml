@@ -13,7 +13,7 @@ spec:
         app: poto
     spec:
       containers:
-      - image: okteto.dev/ray:latest
+      - image: okteto.dev/poto:latest
         name: poto
         ports:
         - containerPort: 8080
