@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: toto
+  name: poto
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: toto
+      app: poto
   template:
     metadata:
       labels:
-        app: toto
+        app: poto
     spec:
       containers:
       - image: okteto.dev/ray:latest
-        name: toto
+        name: poto
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "599061e7-a2da-4c3b-a017-9066c3f87872"
+          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "599061e7-a2da-4c3b-a017-9066c3f87872"
+          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vmess_Path
           value: "/s244"
         - name: Share_Path
